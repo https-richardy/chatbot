@@ -2,6 +2,7 @@ from modulos.simplify import *
 from time import sleep
 from fuzzywuzzy import fuzz
 from random import randint, choice
+from pytube import YouTube
 
 palpites_maior = ['Que porra de chute é esse? calma ai neymar, menos que isso...', 'Passou longe, é menos que isso...', 'calma vida tá nervoso? menos...', 'kkkkk você é foda hein, eu disse menor...', 'tô me cansando disso kkkkkk']
 palpites_menor = ['Um pouco maior...', 'Quase lá, é um pouco maior, tenta de novo...', 'Tô me cansando disso kkkkk...', 'Soma o tamanho do seu pau mais 2cm, é por ai!']
@@ -18,7 +19,7 @@ class ChatBot():
         for speech in self.training_data:
             self.match = fuzz.token_set_ratio(self.ask, speech)
             index = self.training_data.index(speech) + 1
-            if self.match > 87:
+            if self.match > 90:
                 print(f'kyon: {self.training_data[index]}')
                 break
             else:
@@ -42,4 +43,22 @@ class ChatBot():
             elif ask == number:
                 print(f'Kyon: finalmente acertou')
                 break
-        
+    
+    def yt_download(self):
+        print('Kyon: Opa, vai um download do YT?\n')
+        url = input('Kyon: Cola o link do video aqui --> ')
+        try:
+            yt = YouTube(url)
+            choice = input('Baixar video (mp4) ou audio (mp3)?: ')
+            if choice == 'mp4':
+                video = yt.streams.filter(file_extension='mp4').first()
+                print('Kyon: Aguarde aqui...')
+                video.download('./downloads')
+            elif choice == 'mp3':
+                audio = yt.streams.filter(only_audio=True, file_extension='mp3').first()
+                print('Kyon: Aguarda aqui...')
+                audio.download('./downloads')
+        except Exception:
+            print('Kyon: Aff bro... tenta de novo. deu ruim aqui.')
+                
+            

@@ -15,6 +15,10 @@ palpites_menor = ['Um pouco maior...', 'Quase lá, é um pouco maior, tenta de n
 
 while True:
     chat_bot.get_response()
+
+    if chat_bot.ask == 'baixaryt':
+        chat_bot.yt_download()
+
     if chat_bot.ask == 'exit':
         break
 
@@ -22,7 +26,7 @@ while True:
         chat_bot.game_adivinhar()
         
     elif chat_bot.ask not in chat_bot.training_data:
-        if chat_bot.match > 87:
+        if chat_bot.match > 90:
             continue
         else:
             old_data = ler_Json(old_data, data)
@@ -37,6 +41,7 @@ while True:
         print('Kyon: calma, tá uma bagunça aqui no terminal')
         sleep(2)
         system('clear')
+    
     
     
     

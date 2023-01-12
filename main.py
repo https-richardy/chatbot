@@ -1,6 +1,5 @@
 from modulos.chatbot import ChatBot
 from modulos.simplify import *
-from random import randint, choice
 from time import sleep
 from os import system
 
@@ -23,11 +22,14 @@ while True:
         chat_bot.game_adivinhar()
         
     elif chat_bot.ask not in chat_bot.training_data:
-        old_data = ler_Json(old_data, data)
-        new_converse = input(f'Como eu poderia responder a "{chat_bot.ask}"?: ').lower()
-        old_data.append(chat_bot.ask)
-        old_data.append(new_converse)
-        gravar_Json(old_data, data)
+        if chat_bot.match > 87:
+            continue
+        else:
+            old_data = ler_Json(old_data, data)
+            new_converse = input(f'Como eu poderia responder a "{chat_bot.ask}"?: ').lower()
+            old_data.append(chat_bot.ask)
+            old_data.append(new_converse)
+            gravar_Json(old_data, data)
     
     elif chat_bot.ask == 'clear':
         print('Kyon: Pera ai já vou limpar')

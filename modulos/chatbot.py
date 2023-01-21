@@ -3,9 +3,10 @@ from time import sleep
 from fuzzywuzzy import fuzz
 from random import randint, choice
 from pytube import YouTube
+from os import system
 
 palpites_maior = ['Que porra de chute é esse? calma ai neymar, menos que isso...', 'Passou longe, é menos que isso...', 'calma vida tá nervoso? menos...', 'kkkkk você é foda hein, eu disse menor...', 'tô me cansando disso kkkkkk']
-palpites_menor = ['Um pouco maior...', 'Quase lá, é um pouco maior, tenta de novo...', 'Tô me cansando disso kkkkk...', 'Soma o tamanho do seu pau mais 2cm, é por ai!']
+palpites_menor = ['Um pouco maior...', 'Quase lá, é um pouco maior, tenta de novo...', 'Tô me cansando disso kkkkk...', 'Hmmm, é menor que isso...']
 
 class ChatBot():
     def __init__(self):
@@ -46,19 +47,13 @@ class ChatBot():
     
     def yt_download(self):
         print('Kyon: Opa, vai um download do YT?\n')
-        url = input('Kyon: Cola o link do video aqui --> ')
         try:
-            yt = YouTube(url)
-            choice = input('Baixar video (mp4) ou audio (mp3)?: ')
-            if choice == 'mp4':
-                video = yt.streams.filter(file_extension='mp4').first()
-                print('Kyon: Aguarde aqui...')
-                video.download('./downloads')
-            elif choice == 'mp3':
-                audio = yt.streams.filter(only_audio=True, file_extension='mp3').first()
-                print('Kyon: Aguarda aqui...')
-                audio.download('./downloads')
+            while True:
+                link = str(input('Link da music que deseja escutar: '))
+                yt = YouTube(link)
+
+                audios = yt.streams.get_by_itag(251)
+                download = audios.download(filename='musica.mp3')
         except Exception:
-            print('Kyon: Aff bro... tenta de novo. deu ruim aqui.')
-                
+            print('Deu ruim aqui no donwload')
             

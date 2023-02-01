@@ -10,7 +10,7 @@ chat_bot.training()
 training_converse = list()
 old_data = list()
 palpites_maior = ['Que porra de chute é esse? calma ai neymar, menos que isso...', 'Passou longe, é menos que isso...', 'calma vida tá nervoso? menos...', 'kkkkk você é foda hein, eu disse menor...', 'tô me cansando disso kkkkkk']
-palpites_menor = ['Um pouco maior...', 'Quase lá, é um pouco maior, tenta de novo...', 'Tô me cansando disso kkkkk...', 'Soma o tamanho do seu pau mais 2cm, é por ai!']
+palpites_menor = ['Um pouco maior...', 'Quase lá, é um pouco maior, tenta de novo...', 'Tô me cansando disso kkkkk...', 'é maior q sua fimose', 'tipo a profundidade da bct da sua mae só q um pouco maior']
 
 
 while True:
@@ -41,7 +41,3 @@ while True:
         print('Kyon: calma, tá uma bagunça aqui no terminal')
         sleep(2)
         system('clear')
-    
-    
-    
-    

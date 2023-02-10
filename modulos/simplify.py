@@ -1,6 +1,7 @@
 from datetime import date
 import json
 import colorama
+from os import system, name
 
 def obter_data():
     data_atual = date.today()
@@ -57,3 +58,9 @@ def banner(msg):
     print(f'{msg.upper():^40}')
     print('-=' * 20)
     print('\n')
+
+def clear_screen():
+    if name == 'nt':
+        system('cls')
+    else:
+        system('clear')

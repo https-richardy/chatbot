@@ -16,15 +16,10 @@ palpites_menor = ['Um pouco maior...', 'Quase lá, é um pouco maior, tenta de n
 while True:
     chat_bot.get_response()
 
-    if chat_bot.ask == 'baixaryt':
-        chat_bot.yt_download()
-
     if chat_bot.ask == 'exit':
         break
-
     if chat_bot.ask == 'adivinhar' or chat_bot.ask == 'adivinha':
         chat_bot.game_adivinhar()
-        
     elif chat_bot.ask not in chat_bot.training_data:
         if chat_bot.match > 90:
             continue
@@ -34,7 +29,6 @@ while True:
             old_data.append(chat_bot.ask)
             old_data.append(new_converse)
             gravar_Json(old_data, data)
-    
     elif chat_bot.ask == 'clear':
         print('Kyon: Pera ai já vou limpar')
         sleep(1)

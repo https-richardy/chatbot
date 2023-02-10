@@ -2,7 +2,6 @@ from modulos.simplify import *
 from time import sleep
 from fuzzywuzzy import fuzz
 from random import randint, choice
-from pytube import YouTube
 from os import system
 from gtts import gTTS
 from playsound import playsound
@@ -25,8 +24,8 @@ class ChatBot():
             index = self.training_data.index(speech) + 1
             if self.match > 60:
                 audio = gTTS(self.training_data[index], lang='pt')
-                audio.save('speech.mp3')
-                playsound('speech.mp3')
+                audio.save('kyon_speech.mp3')
+                playsound('kyon_speech.mp3')
                 print(f'kyon: {self.training_data[index]}')
                 break
             else:
@@ -50,16 +49,6 @@ class ChatBot():
             elif ask == number:
                 print(f'Kyon: finalmente acertou')
                 break
-    
-    def yt_download(self):
-        print('Kyon: Opa, vai um download do YT?\n')
-        try:
-            while True:
-                link = str(input('Link da music que deseja escutar: '))
-                yt = YouTube(link)
 
-                audios = yt.streams.get_by_itag(251)
-                download = audios.download(filename='musica.mp3')
-        except Exception:
-            print('Deu ruim aqui no donwload')
-            
+    def get_date(self):
+        self.data = obter_data()

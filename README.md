@@ -4,7 +4,7 @@ Este é um projeto simples de chatbot em Python que simula uma conversa entre o 
 
 ## Como funciona?
 
-O chatbot foi desenvolvido em Python usando apenas a lógica sem bibliotecas específicas para chabot's. O chatbot é capaz de entender as mensagens do usuário mesmo usando palavras erradas ou esquecendo de acentuações e assim gerar resposta com base em algumas palavras-chave pré-definidas.
+O chatbot foi desenvolvido em Python usando apenas a lógica sem bibliotecas específicas para chabot's. O chatbot é capaz de entender as mensagens do usuário mesmo usando palavras erradas ou esquecendo de acentuações e assim obter resposta com base em algumas palavras-chave pré-definidas.
 
 O código é bem simples e pode ser facilmente entendido por programadores iniciantes em Python.
 

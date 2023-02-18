@@ -10,7 +10,7 @@ O código é bem simples e pode ser facilmente entendido por programadores inici
 
 ## Como usar?
 
-Para usar o chatbot, basta executar o arquivo `main.py` em seu ambiente de desenvolvimento Python. O chatbot irá simular uma conversa com o usuário e gerar respostas com base nas palavras-chave que foram definidas.
+Para usar o chatbot, basta executar o arquivo `main.py` em seu ambiente de desenvolvimento Python. O chatbot irá simular uma conversa com o usuário e obter respostas com base nas palavras-chave que foram definidas.
 
 ## Roadmap
 

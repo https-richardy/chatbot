@@ -25,3 +25,22 @@ Aviso: Este chatbot foi treinado com um conjunto de dados fornecido por várias 
 Além disso, lembre-se de que o desenvolvedor não é o único responsável pelas falas do bot no arquivo JSON. Vários colaboradores podem contribuir para o conjunto de dados e, portanto, não é possível garantir que todas as respostas sejam apropriadas ou livres de preconceitos.
 
 Se você encontrar uma resposta ofensiva ou inadequada, recomendamos gerar um novo arquivo "data.json" com as suas próprias falas do bot ou usar diretamente o training_bot.py para adicionar novas falas pré-definidas ao bot. Dessa forma, você pode ter mais controle sobre as respostas do bot e garantir que elas sejam apropriadas para o seu público.
+
+## Instalação das dependências do Chatbot
+
+Para executar o Chatbot, é necessário instalar algumas dependências. O processo de instalação pode variar de acordo com o sistema operacional que você está usando.
+
+### Linux
+
+Para instalar as dependências no Linux, abra o terminal e digite o seguinte comando antes de executar o script install_dependecies.sh:
+```text
+chmod +x install_dependecies.sh
+```
+depois de ter instalado todos os pacotes necessãrios dê o comando:
+
+```text
+./install_dependecies.sh
+```
+
+### Windows  
+Basta executar o arquivo ```install_dependecies.bat```

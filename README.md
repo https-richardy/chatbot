@@ -20,7 +20,7 @@ Este projeto é um projeto simples e pode ser expandido para incluir mais funcio
 
 Contribuições para este projeto são bem-vindas. Se você tiver alguma sugestão ou ideia para melhorar o chatbot, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Aviso: Este chatbot foi treinado com um conjunto de dados fornecido por várias fontes e, portanto, pode fornecer respostas que podem ser consideradas ofensivas ou inadequadas. Por favor, esteja ciente de que as respostas do bot não refletem necessariamente as opiniões do desenvolvedor ou do proprietário deste chatbot.
+Aviso: Este chatbot foi desenvolvido com um conjunto de dados fornecido por várias fontes e, portanto, pode fornecer respostas que podem ser consideradas ofensivas ou inadequadas. Por favor, esteja ciente de que as respostas do bot não refletem necessariamente as opiniões do desenvolvedor ou do proprietário deste chatbot.
 
 Além disso, lembre-se de que o desenvolvedor não é o único responsável pelas falas do bot no arquivo JSON. Vários colaboradores podem contribuir para o conjunto de dados e, portanto, não é possível garantir que todas as respostas sejam apropriadas ou livres de preconceitos.
 

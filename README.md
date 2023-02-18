@@ -36,7 +36,7 @@ Para instalar as dependências no Linux, abra o terminal e digite o seguinte com
 ```text
 chmod +x install_dependecies.sh
 ```
-depois de ter instalado todos os pacotes necessãrios dê o comando:
+depois de ter instalado todos os pacotes necessários dê o comando:
 
 ```text
 ./install_dependecies.sh

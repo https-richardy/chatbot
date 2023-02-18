@@ -1,4 +1,4 @@
-# ChaBot - Kyon
+# ChatBot - Kyon
 
 Este é um projeto simples de chatbot em Python que simula uma conversa entre o usuário e o chatbot. Este projeto foi desenvolvido com o objetivo de demonstrar como criar um chatbot básico em Python e pode servir como ponto de partida para outros projetos.
 
